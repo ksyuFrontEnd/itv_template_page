@@ -36,11 +36,13 @@
                                 'items_wrap'           => '<ul id="%1$s" class="header_list %2$s">%3$s</ul>',  
                                 ] ); 
                             ?>   
-                            <button class="menu__btn">Замовити сайт</button>
+                            <button class="menu__btn">
+                                <?php the_field('button', 'option'); ?>
+                            </button>
                         </div>                          
                     </nav> 
                     <div class="burger-menu__overlay"></div> 
                 </div>                
-            </div>                      
+            </div>                                  
         </header>  
 	
