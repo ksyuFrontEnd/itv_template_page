@@ -29,7 +29,7 @@ function wp_it_volunteers_scripts() {
     wp_enqueue_script( 'home-scripts', get_template_directory_uri() . '/assets/scripts/template-scripts/home.js', array(), false, true );
   }
 
-  if ( is_page_template('about.php') ) {
+  if ( is_page_template('templates/about.php') ) {
     wp_enqueue_style( 'about-style', get_template_directory_uri() . '/assets/styles/template-styles/about.css', array('main') );
     wp_enqueue_script( 'about-scripts', get_template_directory_uri() . '/assets/scripts/template-scripts/about.js', array(), false, true );
   }
