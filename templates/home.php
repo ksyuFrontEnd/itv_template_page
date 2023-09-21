@@ -19,8 +19,8 @@ get_header();
 </section>
 <section class="welcome">
     <div class="welcome__container _container">
-        <h2 class="welcome__title"><?php the_field('welcome__title'); ?></h2>
-        <p class="welcome__text"><?php the_field('welcome__text'); ?></p>
+        <h2 class="welcome__title home__title"><?php the_field('welcome__title'); ?></h2>
+        <p class="welcome__text home__text"><?php the_field('welcome__text'); ?></p>
         <p class="welcome__standua"><?php the_field('welcome__standua'); ?></p>
     </div>                
 </section>
@@ -28,17 +28,17 @@ get_header();
     <div class="purpose__container _container">
         <div class="purpose__column purpose__img"><img src="<?php the_field('purpose__img'); ?>" alt="purpose"></div>
         <div class="purpose__column">
-            <h2 class="purpose__title"><?php the_field('purpose__title'); ?></h2>
-            <p class="purpose__text"><?php the_field('purpose__text-1'); ?></p>
-            <p class="purpose__text"><?php the_field('purpose__text-2'); ?></p>
+            <h2 class="purpose__title home__title"><?php the_field('purpose__title'); ?></h2>
+            <p class="purpose__text home__text"><?php the_field('purpose__text-1'); ?></p>
+            <p class="purpose__text home__text"><?php the_field('purpose__text-2'); ?></p>
             <a href="#" class="purpose__button home__button"><?php the_field('purpose__button'); ?></a> 
         </div>
     </div>
 </section>
 <section class="customer">
     <div class="customer__box _container">
-        <h2 class="customer__title"><?php the_field('customer__title'); ?></h2>
-        <p class="customer__text"><?php the_field('customer__text'); ?></p>
+        <h2 class="customer__title home__title"><?php the_field('customer__title'); ?></h2>
+        <p class="customer__text home__text"><?php the_field('customer__text'); ?></p>
         <div class="customer__container">
             <div class="customer__content">
                 <p class="customer__name customer__color1"><?php the_field('customer__name-1'); ?></p>
@@ -49,5 +49,18 @@ get_header();
             <div class="customer__img"><img src="<?php the_field('customer__img'); ?>" alt="customer"></div>
         </div>
     </div>                
+</section>
+<section class="team">
+    <div class="team__box _container">
+        <h2 class="team__title home__title"><?php the_field('team__title'); ?></h2>
+        <div class="team__container">
+            <div class="team__img"><img src="<?php the_field('team__img'); ?>" alt="team"></div>
+            <div class="team__content">
+                <p class="team__text home__text"><?php the_field('team__text-1'); ?></p>
+                <p class="team__text home__text"><?php the_field('team__text-2'); ?></p>
+                <a href="#" class="team__button home__button"><?php the_field('team__button'); ?></a> 
+            </div>
+        </div>
+    </div>
 </section>
 <?php get_footer(); ?>
