@@ -63,4 +63,12 @@ get_header();
         </div>
     </div>
 </section>
+<section class="joining">
+    <div class="joining__container _container">
+        <h2 class="joining__title"><?php the_field('joining__title'); ?></h2>
+        <p class="joining__text home__text"><?php the_field('joining__text'); ?></p>
+        <a href="#" class="joining__button home__button"><?php the_field('joining__button'); ?></a>
+        <img src="<?php the_field('joining__img'); ?>" alt="star">
+    </div>                
+</section>
 <?php get_footer(); ?>
