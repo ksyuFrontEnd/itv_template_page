@@ -79,6 +79,10 @@ get_header();
 
               $joinButton = get_field('join__button');
 
+              $link_url = $joinButton['url'];
+              $link_title = $joinButton['title'];
+              $link_target = $joinButton['target'] ? $joinButton['target'] : '_self';
+
               ?>
 
         <div class="join container">
@@ -90,7 +94,12 @@ get_header();
           <p class="join__paragraph">
             <?php echo $joinParagraph; ?>
           </p>
-          <button class="join__button" type="button"><?php echo $joinButton; ?></button>
+          
+            <a class="join__button" href="<?php echo esc_url( $link_url); ?>" 
+            target="<?php echo esc_attr( $link_target); ?>">
+            <?php echo esc_html( $link_title ); ?>
+</a>
+          
         </div>
 
         <?php
