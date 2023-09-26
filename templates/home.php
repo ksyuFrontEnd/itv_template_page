@@ -71,4 +71,27 @@ get_header();
         <img src="<?php the_field('joining__img'); ?>" alt="star">
     </div>                
 </section>
+<section class="question">
+    <div class="_container">
+        <h2 class="question__header home__title"><?php the_field('question__header'); ?></h2>
+        <?php 
+        $rows = get_field('question');
+        if( $rows ) {        
+            foreach( $rows as $row ) {
+                echo '<div class="question__column">';
+                    echo '<div class="question__text">';
+                        echo '<p class="question__title">';
+                            echo ( $row['question__title'] );
+                        echo '</p>'; 
+                        echo '<p class="question__answer closen">';
+                            echo ( $row['question__answer'] );
+                        echo '</p>'; 
+                    echo '</div>'; 
+                    echo '<div class="question__btn"></div>';
+                echo '</div>';
+            }        
+        }
+        ?>        
+    </div>    
+</section>         
 <?php get_footer(); ?>

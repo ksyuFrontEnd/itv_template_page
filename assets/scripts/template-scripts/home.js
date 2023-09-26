@@ -1,1 +1,1 @@
-console.log("home page");
+function openCloseDetails(e){if(e.target.classList.contains("question__btn")){e.target.closest(".question__column").querySelector(".question__answer").classList.toggle("opened"),e.target.closest(".question__column").querySelector(".question__btn").classList.toggle("question-minus")}}document.querySelector(".question").addEventListener("click",openCloseDetails);
