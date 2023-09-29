@@ -39,6 +39,10 @@ function wp_it_volunteers_scripts() {
     wp_enqueue_script( 'services-scripts', get_template_directory_uri() . '/assets/scripts/template-scripts/services.js', array(), false, true );
   }
  
+  if ( is_page_template('templates/projects.php') ) {
+    wp_enqueue_style( 'projects-style', get_template_directory_uri() . '/assets/styles/template-styles/projects.css', array('main') );
+    wp_enqueue_script( 'projects-scripts', get_template_directory_uri() . '/assets/scripts/template-scripts/projects.js', array(), false, true );
+  }
 }
 /** add fonts */
 function add_google_fonts() {
@@ -91,3 +95,5 @@ if( function_exists('acf_add_options_page') ) {
       'parent_slug'   => 'theme-general-settings',
   ));
 }
+
+
