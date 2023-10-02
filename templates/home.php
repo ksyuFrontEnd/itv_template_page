@@ -50,6 +50,78 @@ get_header();
         </div>
     </div>                
 </section>
+<!-- home-projects only mobile, swiper, repeater -->
+<section class="home-projects">
+    <div class=" _container">
+        <h2 class="home-projects__title home__title"><?php the_field('home-projects__title'); ?></h2>  
+        <div class="home-projects-slider swiper">  
+            <div class="home-projects__wrapper swiper-wrapper"> 
+                <?php 
+                $rows = get_field('implemented_projects');
+                if( $rows ) { 
+                    foreach( $rows as $row ) { 
+                        $image = $row['home-project__img'];
+                        $link = $row['home-projects__site-url'];
+                        echo '<div class="home-projects__slide swiper-slide">';   
+                            echo '<div class="home-projects__img">'; 
+                                echo wp_get_attachment_image( $image, 'full' ); 
+                            echo '</div>'; 
+                            echo '<h3 class="home-projects__name">';
+                                echo ( $row['home-project__name'] ); 
+                            echo '</h3>';
+                            echo '<p class="home-projects__description">';
+                                echo ( $row['home-project__description'] );
+                            echo '</p>';  
+                            echo '<a href="' . esc_url( $link ) . '" class="home-projects__button-site home__button" target="_blank">'; 
+                                echo ( $row['home-projects__button-site'] );
+                            echo '</a>';
+                        echo '</div>';  
+                    } 
+                } 
+                ?>
+            </div>    
+            <div class="home-projects__pagination swiper-pagination"></div>
+        </div>
+        <a href="#" class="home-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
+    </div>
+</section>
+<!-- projects full screen and tablet-->
+<section class="full-projects">
+    <div class=" _container">
+        <h2 class="full-projects__title home__title"><?php the_field('home-projects__title'); ?></h2>  
+        <div class="full-projects__container">    
+            <div class="full-projects__row">
+                <div class="full-projects__slide1">
+                    <div class="full-projects__img1"><img src="<?php the_field('home-project__img1'); ?>" alt="project"></div>
+                    <h3 class="full-projects__name"><?php the_field('home-project__name1'); ?></h3>
+                    <p class="full-projects__description"><?php the_field('home-project__description1'); ?></p>
+                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                </div>            
+                <div class="full-projects__slide2">
+                    <div class="full-projects__img2"><img src="<?php the_field('home-project__img2'); ?>" alt="project"></div>
+                    <h3 class="full-projects__name"><?php the_field('home-project__name2'); ?></h3>
+                    <p class="full-projects__description"><?php the_field('home-project__description2'); ?></p>
+                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                </div>
+            </div>        
+            <div class="full-projects__row">
+                <div class="full-projects__slide3">
+                    <div class="full-projects__img3"><img src="<?php the_field('home-project__img3'); ?>" alt="project"></div>
+                    <h3 class="full-projects__name"><?php the_field('home-project__name3'); ?></h3>
+                    <p class="full-projects__description"><?php the_field('home-project__description3'); ?></p>
+                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                </div>
+                <div class="full-projects__slide4">
+                    <div class="full-projects__img4"><img src="<?php the_field('home-project__img4'); ?>" alt="project"></div>
+                    <h3 class="full-projects__name"><?php the_field('home-project__name4'); ?></h3>
+                    <p class="full-projects__description"><?php the_field('home-project__description4'); ?></p>
+                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                </div>  
+            </div>                     
+        </div>
+        <a href="#" class="full-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
+    </div>
+</section>  
 <section class="team">
     <div class="team__box _container">
         <h2 class="team__title home__title"><?php the_field('team__title'); ?></h2>

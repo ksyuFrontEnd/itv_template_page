@@ -10,3 +10,33 @@ function openCloseDetails(event) {
   };
   
 document.querySelector('.question').addEventListener("click", openCloseDetails); 
+
+
+// Section home-projects, add swiper 
+new Swiper('.home-projects-slider', {     
+  loop: true,
+  autoHeight: false,    
+  watchOverflow: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,    
+  },   
+    
+  breakpoints: {
+      320: {
+          slidesPerView: 1, 
+          spaceBetween: 20, 
+          padding: 24,                
+      },
+      768: {
+          slidesPerView: 4,
+          spaceBetween: 20,  
+          autoWidth: false,                  
+      },
+      992: {
+          slidesPerView: 4,
+          spaceBetween: 30, 
+      },
+  }
+});
