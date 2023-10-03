@@ -67,7 +67,6 @@ h2 {
 }
 
 .projects {
-  margin-top: 100px;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -116,7 +115,17 @@ h2 {
   line-height: 1.4;
 }
 
-.project__button {
+.project__subtext {
+  margin-top: 48px;
+  color: #3f78e3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.project__button,
+.acf-loadmore {
+  box-sizing: border-box;
   display: inline-flex;
   padding: 20px 32px;
   justify-content: center;
@@ -130,6 +139,7 @@ h2 {
   font-weight: 500;
   line-height: 1.3;
   text-decoration: none;
+  border: 2px solid transparent;
 
   &:visited {
     color: #ffffff;
@@ -142,6 +152,12 @@ h2 {
     color: #3f78e3;
     border: 2px solid #3f78e3;
   }
+}
+
+.loadmore-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote {
@@ -197,6 +213,11 @@ h2 {
     font-size: 18px;
   }
 
+  .acf-loadmore {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+
   .project__list {
     margin-top: 20px;
   }
@@ -229,6 +250,12 @@ h2 {
 
   .project__text {
     width: 100%;
+  }
+
+  .project__subtext {
+    margin-top: 80px;
+    font-size: 18px;
+    margin-bottom: 32px;
   }
 
   .quote {
@@ -284,6 +311,11 @@ h2 {
     font-size: 18px;
   }
 
+  .acf-loadmore {
+    padding: 16px 24px;
+    font-size: 18px;
+  }
+
   .project__list {
     margin-top: 20px;
   }
@@ -316,6 +348,12 @@ h2 {
 
   .project__text {
     width: 100%;
+  }
+
+  .project__subtext {
+    margin-top: 80px;
+    margin-bottom: 32px;
+    font-size: 18px;
   }
 
   .quote {
@@ -357,7 +395,12 @@ h2 {
     font-size: 30px;
   }
 
-  .project__button {
+  .project__subtext {
+    font-size: 17px;
+  }
+
+  .project__button,
+  .acf-loadmore {
     padding: 16px 24px;
     font-size: 17px;
     margin-top: 32px;
@@ -431,7 +474,13 @@ h2 {
     font-size: 72px;
   }
 
-  .project__button {
+  .project__subtext {
+    margin-top: 40px;
+    font-size: 32px;
+  }
+
+  .project__button,
+  .acf-loadmore {
     padding: 20px 88px;
   }
 
