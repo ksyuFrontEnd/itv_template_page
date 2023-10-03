@@ -17,26 +17,44 @@ new Swiper('.home-projects-slider', {
   loop: true,
   autoHeight: false,    
   watchOverflow: true,
-
   pagination: {
     el: '.swiper-pagination',
     clickable: true,    
-  },   
-    
+  },       
   breakpoints: {
       320: {
           slidesPerView: 1, 
-          spaceBetween: 20, 
-          padding: 24,                
+          spaceBetween: 20,                         
       },
       768: {
           slidesPerView: 4,
-          spaceBetween: 20,  
-          autoWidth: false,                  
+          spaceBetween: 20,                              
       },
       992: {
           slidesPerView: 4,
           spaceBetween: 30, 
+      },
+  }
+});
+
+// Section home-services, add swiper 
+new Swiper('.home-services-slider', {     
+  loop: true,
+  autoHeight: false,    
+  watchOverflow: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,    
+  }, 
+  enabled: false,  
+  breakpoints: {        
+      768: {
+          enabled: true,
+          slidesPerView: 2.5,          
+      },
+      992: {          
+          slidesPerView: 4.5, 
+          enabled: true,                
       },
   }
 });

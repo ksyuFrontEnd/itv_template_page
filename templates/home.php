@@ -31,9 +31,36 @@ get_header();
             <h2 class="purpose__title home__title"><?php the_field('purpose__title'); ?></h2>
             <p class="purpose__text home__text"><?php the_field('purpose__text-1'); ?></p>
             <p class="purpose__text home__text"><?php the_field('purpose__text-2'); ?></p>
-            <a href="#" class="purpose__button home__button"><?php the_field('purpose__button'); ?></a> 
+            <a href="<?php the_field('purpose__button-url'); ?>" class="purpose__button home__button"><?php the_field('purpose__button'); ?></a> 
         </div>
     </div>
+</section>
+<section class="home-services">
+    <div class="home-services__container _container">
+        <h2 class="home-services__title home__title"><?php the_field('home-services__title'); ?></h2>
+        <div class="home-services-slider swiper">
+            <div class="home-services__wrapper swiper-wrapper">            
+            <?php 
+                $rows = get_field('home-services');
+                if( $rows ) { 
+                    foreach( $rows as $row ) {                                                 
+                        $link = $row['home-services__link'];
+                        echo '<div class="home-services__slide swiper-slide">';
+                            echo '<h3 class="home-services__name">';
+                                echo ( $row['home-services__name'] ); 
+                            echo '</h3>';
+                            echo '<p class="home-services__description">';
+                                echo ( $row['home-services__description'] );
+                            echo '</p>';  
+                            echo '<a href="' . esc_url( $link ) . '" class="home-services__button">&#129133;</a>'; 
+                        echo '</div>';  
+                    } 
+                } 
+                ?>                  
+            </div>
+            <div class="home-services__pagination swiper-pagination"></div>  
+        </div>
+    </div>    
 </section>
 <section class="customer">
     <div class="customer__box _container">
