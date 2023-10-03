@@ -37,12 +37,10 @@ get_header();
 
               $aboutTitle = get_field('about__title');
               $aboutFirstParagraph = get_field('about__paragraph');
-              $aboutFirstParagraphSecond = get_field('about__paragraph--second');
-
-              $aboutSecondParagraph = get_field('about__second__paragraph');
-              $aboutSecondParagraphSecond = get_field('about__second__paragraph--second');
-
-              $aboutImage = get_field('mission__image1');
+              $aboutSecondParagraph= get_field('about__paragraph--second');
+              $aboutThirdParagraph= get_field('about__paragraph--third');
+              $aboutFourthParagraph= get_field('about__paragraph--fourth');
+              $aboutImage = get_field('about__image2');
 
               ?>
 
@@ -51,16 +49,16 @@ get_header();
                 <?php echo $aboutFirstParagraph; ?>
               </p>
               <p class="about__paragraph about__paragraph--second">
-                <?php echo $aboutFirstParagraphSecond; ?>
+                <?php echo $aboutSecondParagraph; ?>
               </p>
             </div>
             <div class="about__block2">
               <div class="about__text">
                 <p class="about__paragraph">
-                  <?php echo $aboutSecondParagraph; ?>
+                  <?php echo $aboutThirdParagraph; ?>
                 </p>
                 <p class="about__paragraph about__paragraph--second">
-                  <?php echo $aboutSecondParagraphSecond; ?>
+                  <?php echo $aboutFourthParagraph; ?>
                 </p>
               </div>
               <img class="about__image2" 

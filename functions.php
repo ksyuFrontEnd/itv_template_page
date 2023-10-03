@@ -97,3 +97,89 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
+
+/**
+ * ACF AJAX підвантаження
+ */
+
+// додаємо action для авторизованих користувачів
+add_action("wp_ajax_acf_repeater_show_more", "acf_repeater_show_more");
+// додаємо action для не авторизованих користувачів
+add_action("wp_ajax_nopriv_acf_repeater_show_more", "acf_repeater_show_more");
+
+function acf_repeater_show_more()
+{
+    // валідація Nonce («Одноразові числа»)
+    if (!isset($_POST["nonce"]) || !wp_verify_nonce($_POST["nonce"], "my_repeater_field_nonce")) {
+        exit;
+    }
+    // впевнимося, що в нас є інші значення
+    if (!isset($_POST["post_id"]) || !isset($_POST["offset"])) {
+        return;
+    }
+    $show = 2; // по скільки відображати
+    $start = $_POST["offset"];
+    $end = $start + $show;
+    $post_id = $_POST["post_id"];
+    // використаємо об'єктний буфер для захоплення виводу html
+    ob_start();
+    if (have_rows("project__item", $post_id)) {
+        $total = count(get_field("project__item", $post_id));
+        $count = 0;
+
+        while (have_rows("project__item", $post_id)) {
+            the_row();
+            if ($count < $start) {
+                // продовжуємо показивати і збільшувати лічильник
+                $count++;
+                continue;
+            }
+            ?>
+            <?php $projectName = get_sub_field("project__name"); ?>
+          <?php $projectImg = get_sub_field("project__img"); ?>
+          <?php $projectParagraph = get_sub_field("project__paragraph"); ?>
+          <?php $projectLink = get_sub_field("project__link"); ?>
+
+          <li class="project__item">
+                <div class="project__img" ><img 
+              src="<?php echo $projectImg['url']; ?>" 
+              alt="<?php echo $projectImg['alt']; ?>" 
+              /></div>
+              <div class="project__text">
+                <h5 class="project__name">
+                  <?php echo $projectName; ?>
+                </h5>
+                <p class="project__paragraph">
+                   <?php echo $projectParagraph; ?>
+                </p>
+                
+  <?php
+if ($projectLink['title']) { ?>
+<a class="project__button" href="<?php echo esc_url( $projectLink['url']); ?>" 
+            target="<?php echo esc_attr(  $projectLink['target']); ?>">
+            <?php echo $projectLink['title']; ?></a>
+<?php } else { ?>
+  <p class="project__subtext">Проєкт в роботі...</p>
+
+<?php } ?>
+
+              </div>
+              </li>
+            
+            <?php
+            $count++;
+            if ($count == $end) {
+                break; 
+            }
+        }
+    }
+    $content = ob_get_clean();
+    // перевіряємо, чи показали ми останній елемент
+    $more = false;
+    if ($total > $count) {
+        $more = true;
+    }
+    // виводим наші 3 значення у вигляді масиву в кодуванні json
+    echo json_encode(array("content" => $content, "more" => $more, "offset" => $end));
+    exit;
+}
