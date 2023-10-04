@@ -60,7 +60,16 @@ get_header();
             </div>
             <div class="home-services__pagination swiper-pagination"></div>  
         </div>
-    </div>    
+    </div>  
+    <!-- <?php 
+        $link = get_field('home-projects__button-url');
+        if( $link ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+        ?>
+        <a class="full-projects__button2 home__button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_target ); ?></a>
+    <?php endif; ?> -->  
 </section>
 <section class="customer">
     <div class="customer__box _container">
@@ -109,8 +118,8 @@ get_header();
             </div>    
             <div class="home-projects__pagination swiper-pagination"></div>
         </div>
-        <a href="#" class="home-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
-    </div>
+        <a href="<?php the_field('home-projects__button-url'); ?>" class="home-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
+    </div>    
 </section>
 <!-- projects full screen and tablet-->
 <section class="full-projects">
@@ -121,32 +130,28 @@ get_header();
                 <div class="full-projects__slide1">
                     <div class="full-projects__img1"><img src="<?php the_field('home-project__img1'); ?>" alt="project"></div>
                     <h3 class="full-projects__name"><?php the_field('home-project__name1'); ?></h3>
-                    <p class="full-projects__description"><?php the_field('home-project__description1'); ?></p>
-                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                    <p class="full-projects__description"><?php the_field('home-project__description1'); ?></p>                    
                 </div>            
                 <div class="full-projects__slide2">
                     <div class="full-projects__img2"><img src="<?php the_field('home-project__img2'); ?>" alt="project"></div>
                     <h3 class="full-projects__name"><?php the_field('home-project__name2'); ?></h3>
-                    <p class="full-projects__description"><?php the_field('home-project__description2'); ?></p>
-                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                    <p class="full-projects__description"><?php the_field('home-project__description2'); ?></p>                    
                 </div>
             </div>        
             <div class="full-projects__row">
                 <div class="full-projects__slide3">
                     <div class="full-projects__img3"><img src="<?php the_field('home-project__img3'); ?>" alt="project"></div>
                     <h3 class="full-projects__name"><?php the_field('home-project__name3'); ?></h3>
-                    <p class="full-projects__description"><?php the_field('home-project__description3'); ?></p>
-                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                    <p class="full-projects__description"><?php the_field('home-project__description3'); ?></p>                    
                 </div>
                 <div class="full-projects__slide4">
                     <div class="full-projects__img4"><img src="<?php the_field('home-project__img4'); ?>" alt="project"></div>
                     <h3 class="full-projects__name"><?php the_field('home-project__name4'); ?></h3>
-                    <p class="full-projects__description"><?php the_field('home-project__description4'); ?></p>
-                    <!-- <a href="#" class="home-projects__button1 home__button"><?php the_field('home-project__button1'); ?></a> -->
+                    <p class="full-projects__description"><?php the_field('home-project__description4'); ?></p>                    
                 </div>  
             </div>                     
         </div>
-        <a href="#" class="full-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
+        <a href="<?php the_field('home-projects__button-url'); ?>" class="home-projects__button2 home__button"><?php the_field('home-project__button2'); ?></a>
     </div>
 </section>  
 <section class="team">
@@ -157,18 +162,10 @@ get_header();
             <div class="team__content">
                 <p class="team__text home__text"><?php the_field('team__text-1'); ?></p>
                 <p class="team__text home__text"><?php the_field('team__text-2'); ?></p>
-                <a href="#" class="team__button home__button"><?php the_field('team__button'); ?></a> 
+                <a href="<?php the_field('team__button-url'); ?>" class="team__button home__button"><?php the_field('team__button'); ?></a> 
             </div>
         </div>
     </div>
-</section>
-<section class="joining">
-    <div class="joining__container _container">
-        <h2 class="joining__title"><?php the_field('joining__title'); ?></h2>
-        <p class="joining__text home__text"><?php the_field('joining__text'); ?></p>
-        <a href="#" class="joining__button home__button"><?php the_field('joining__button'); ?></a>
-        <img src="<?php the_field('joining__img'); ?>" alt="star">
-    </div>                
 </section>
 <section class="question">
     <div class="_container">

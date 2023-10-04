@@ -29,14 +29,14 @@
     }
 }
 
-.btn {
+.services__btn {
     border-radius: 40px;
     background: #3F78E3;
     color: #FFF;
     font-size: 24px;
     font-weight: 500;
     line-height: 130%;     
-    padding: 20px 37px;     
+    padding: 20px 40px;     
     max-width: fit-content;
     text-decoration: none;   
     display: block;
@@ -50,11 +50,12 @@
         color: #2C2C2C;
     }    
     @media (max-width: 991.98px) {            
-        padding: 16px 24px;
+        padding: 16px 29px;
         font-size: 17px;
     }
     @media (max-width: 767.98px) {        
         max-width: 100%;
+        padding: 14px 29px;
     }
 }
 
