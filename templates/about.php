@@ -69,6 +69,12 @@ get_header();
           </div>
         </div>
 
+
+<?php
+
+get_template_part('template-parts/join');
+?>
+
         <?php
 
               $joinTitle = get_field('join__title');
