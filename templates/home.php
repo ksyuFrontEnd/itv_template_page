@@ -60,18 +60,9 @@ get_header();
             </div>
             <div class="home-services__pagination swiper-pagination"></div>  
         </div>
-    </div>  
-    <!-- <?php 
-        $link = get_field('home-projects__button-url');
-        if( $link ): 
-            $link_url = $link['url'];
-            $link_title = $link['title'];
-            $link_target = $link['target'] ? $link['target'] : '_self';
-        ?>
-        <a class="full-projects__button2 home__button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_target ); ?></a>
-    <?php endif; ?> -->  
-</section>
-<section class="customer">
+    </div> 
+</section>    
+<section class="customer"> 
     <div class="customer__box _container">
         <h2 class="customer__title home__title"><?php the_field('customer__title'); ?></h2>
         <p class="customer__text home__text"><?php the_field('customer__text'); ?></p>

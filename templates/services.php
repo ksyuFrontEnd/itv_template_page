@@ -31,21 +31,21 @@ get_header();
         </div>          
     </div>    
 </section>
-<section class="development">    
+<section class="development" id="support-ui-ux">    
     <div class="development__container _container">   
         <div class="development__content">
             <h2 class="development__title title"><?php the_field('development-design-title'); ?></h2> 
             <p class="development__text text"><?php the_field('development-design-text'); ?></p>    
             <a href="#" class="development__button services__btn"><?php the_field('development-design-btn'); ?></a> 
             <img src="<?php the_field('development-img'); ?>" alt="services">
-            <h2 class="development__title title"><?php the_field('development-title'); ?></h2> 
+            <h2 class="development__title title" id="support-development"><?php the_field('development-title'); ?></h2> 
             <p class="development__text text"><?php the_field('development-text'); ?></p>    
             <a href="#" class="development__button services__btn"><?php the_field('development-btn'); ?></a>                 
         </div>  
         <div class="development__container-img"><img src="<?php the_field('development-img'); ?>" alt="services"></div>        
     </div>    
 </section>
-<section class="support">    
+<section class="support" id="support-tech">    
     <div class="support__container _container">    
         <h2 class="support__title-mobile title"><?php the_field('tech-support-title'); ?></h2>    
         <div class="support__container-img"><img src="<?php the_field('tech-support-img'); ?>" alt="services"></div>
