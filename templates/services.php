@@ -20,39 +20,39 @@ get_header();
         <h2 class="team__content"><?php the_field('our-team-content'); ?></h2> 
     </div>
 </section>
-<section class="support">    
+<section class="support" id="support-it-consalting">    
     <div class="support__container _container">   
         <h2 class="support__title-mobile title"><?php the_field('it-consalting-title'); ?></h2>    
         <div class="support__container-img"><img src="<?php the_field('it-consalting-img'); ?>" alt="services"></div>
         <div class="support__content">
             <h2 class="support__title title"><?php the_field('it-consalting-title'); ?></h2>              
             <p class="support__text text"><?php the_field('it-consalting-text'); ?></p>    
-            <a href="#" class="support__button btn"><?php the_field('it-consalting-btn'); ?></a>               
+            <a href="#" class="support__button services__btn"><?php the_field('it-consalting-btn'); ?></a>               
         </div>          
     </div>    
 </section>
-<section class="development">    
+<section class="development" id="support-ui-ux">    
     <div class="development__container _container">   
         <div class="development__content">
             <h2 class="development__title title"><?php the_field('development-design-title'); ?></h2> 
             <p class="development__text text"><?php the_field('development-design-text'); ?></p>    
-            <a href="#" class="development__button btn"><?php the_field('development-design-btn'); ?></a> 
+            <a href="#" class="development__button services__btn"><?php the_field('development-design-btn'); ?></a> 
             <img src="<?php the_field('development-img'); ?>" alt="services">
-            <h2 class="development__title title"><?php the_field('development-title'); ?></h2> 
+            <h2 class="development__title title" id="support-development"><?php the_field('development-title'); ?></h2> 
             <p class="development__text text"><?php the_field('development-text'); ?></p>    
-            <a href="#" class="development__button btn"><?php the_field('development-btn'); ?></a>                 
+            <a href="#" class="development__button services__btn"><?php the_field('development-btn'); ?></a>                 
         </div>  
         <div class="development__container-img"><img src="<?php the_field('development-img'); ?>" alt="services"></div>        
     </div>    
 </section>
-<section class="support">    
+<section class="support" id="support-tech">    
     <div class="support__container _container">    
         <h2 class="support__title-mobile title"><?php the_field('tech-support-title'); ?></h2>    
         <div class="support__container-img"><img src="<?php the_field('tech-support-img'); ?>" alt="services"></div>
         <div class="support__content">
             <h2 class="support__title title"><?php the_field('tech-support-title'); ?></h2> 
             <p class="support__text text"><?php the_field('tech-support-content'); ?></p>    
-            <a href="#" class="support__button btn"><?php the_field('tech-support-btn'); ?></a>               
+            <a href="#" class="support__button services__btn"><?php the_field('tech-support-btn'); ?></a>               
         </div>          
     </div>    
 </section>
