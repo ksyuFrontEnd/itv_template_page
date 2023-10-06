@@ -37,12 +37,10 @@ get_header();
 
               $aboutTitle = get_field('about__title');
               $aboutFirstParagraph = get_field('about__paragraph');
-              $aboutFirstParagraphSecond = get_field('about__paragraph--second');
-
-              $aboutSecondParagraph = get_field('about__second__paragraph');
-              $aboutSecondParagraphSecond = get_field('about__second__paragraph--second');
-
-              $aboutImage = get_field('mission__image1');
+              $aboutSecondParagraph= get_field('about__paragraph--second');
+              $aboutThirdParagraph= get_field('about__paragraph--third');
+              $aboutFourthParagraph= get_field('about__paragraph--fourth');
+              $aboutImage = get_field('about__image2');
 
               ?>
 
@@ -51,16 +49,16 @@ get_header();
                 <?php echo $aboutFirstParagraph; ?>
               </p>
               <p class="about__paragraph about__paragraph--second">
-                <?php echo $aboutFirstParagraphSecond; ?>
+                <?php echo $aboutSecondParagraph; ?>
               </p>
             </div>
             <div class="about__block2">
               <div class="about__text">
                 <p class="about__paragraph">
-                  <?php echo $aboutSecondParagraph; ?>
+                  <?php echo $aboutThirdParagraph; ?>
                 </p>
                 <p class="about__paragraph about__paragraph--second">
-                  <?php echo $aboutSecondParagraphSecond; ?>
+                  <?php echo $aboutFourthParagraph; ?>
                 </p>
               </div>
               <img class="about__image2" 
@@ -71,6 +69,12 @@ get_header();
           </div>
         </div>
 
+
+<?php
+
+get_template_part('template-parts/join');
+?>
+
         <?php
 
               $joinTitle = get_field('join__title');
@@ -78,6 +82,10 @@ get_header();
               $joinImage = get_field('join__img');
 
               $joinButton = get_field('join__button');
+
+              $link_url = $joinButton['url'];
+              $link_title = $joinButton['title'];
+              $link_target = $joinButton['target'] ? $joinButton['target'] : '_self';
 
               ?>
 
@@ -90,7 +98,12 @@ get_header();
           <p class="join__paragraph">
             <?php echo $joinParagraph; ?>
           </p>
-          <button class="join__button" type="button"><?php echo $joinButton; ?></button>
+          
+            <a class="join__button" href="<?php echo esc_url( $link_url); ?>" 
+            target="<?php echo esc_attr( $link_target); ?>">
+            <?php echo esc_html( $link_title ); ?>
+</a>
+          
         </div>
 
         <?php
