@@ -4,7 +4,7 @@
 */
 
 ?>	
-<section class="form">
+<section class="form" id="form">
     <div class="form__container _container">
         <div class="form__content">
             <h2 class="form__title"><?php the_field('world__title', 'option'); ?></h2>

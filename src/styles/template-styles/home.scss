@@ -62,8 +62,10 @@
 .description {   
     background:  #3F78E3;   
     position: relative;
+    z-index: 3;
     @media (max-width: 767.98px) {
         background: none;
+        margin-top: 20px;
     }
     &__container {
         display: flex;
@@ -90,12 +92,17 @@
             display: flex;
             justify-content: end;             
         }              
-        & img {            
+        & img {  
+            width: 625px;        
             height: 100%;
+            position: absolute;                
+            top: 0;
+            right: 0;
+            z-index: 0;
+            @media (max-width: 1280px) {
+                width: 550px;                
+            }
             @media (max-width: 991.98px) {
-                position: absolute;                
-                top: 0;
-                right: 0;
                 width: 382px;                
             }
             @media (max-width: 767.98px) {
@@ -165,7 +172,9 @@
         font-size: 32px;
         font-weight: 400;
         line-height: 42px;
-        letter-spacing: -0.64px;        
+        letter-spacing: -0.64px;  
+        position: relative;
+        z-index: 3;      
         @media (max-width: 991.98px) { 
             margin: 0px 0 30px 0;            
             font-size: 20px;
@@ -178,38 +187,20 @@
             line-height: 27px;
         }
     }
-    &__btn {
-        padding: 20px 32px;  
-        border-radius: 40px;
-        background-color: #FFF;        
+    &__btn {        
+        background: #FFF;
         color: #2C2C2C;
-        font-size: 24px;   
-        font-weight: 500;
-        line-height: 130%; 
-        display: block;
-        text-align:center;
-        border: #3F78E3; 
-        cursor: pointer;        
-        &:hover {
-            background: #FECE00;
-            box-shadow: 0px 4px 25px 0px rgba(44, 44, 44, 0.11);
+        &:visited {
             color: #2C2C2C;
-        }         
-        @media (max-width: 991.98px) {   
-            padding: 16px 29px;  
-            font-size: 17px;           
-        } 
-        @media (max-width: 767.98px) {
-            margin: 0 auto;           
+        }  
+        @media (max-width: 767.98px) {                       
             background-color: #3F78E3; 
-            color: #FFF;
-            font-size: 18px;
-            font-weight: 500;            
-        }   
-        @media (max-width: 480px) {
+            color: #FFF;  
             width: 90%;
-            padding: 14px 29px;
-        } 
+            &:visited {
+                color: #FFF;
+            }                          
+        }  
     }
 }
 
