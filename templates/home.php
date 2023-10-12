@@ -180,5 +180,6 @@ get_header();
         }
         ?>        
     </div>    
-</section>         
+</section>  
+<?php get_template_part( 'template-parts/form' ); ?>       
 <?php get_footer(); ?>
