@@ -1,0 +1,1 @@
+const popupSuccess=document.getElementById("popup-success"),popupMessage=document.querySelector(".popup"),closeButton=document.querySelector(".popup__close");document.addEventListener("wpcf7mailsent",(function(e){popupMessage.classList.add("opened"),closeButton.onclick=()=>{popupMessage.classList.remove("opened"),popupMessage.classList.add("closen")}}),!1);

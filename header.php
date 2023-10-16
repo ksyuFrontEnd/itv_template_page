@@ -36,7 +36,7 @@
                                 'items_wrap'           => '<ul id="%1$s" class="header_list %2$s">%3$s</ul>',  
                                 ] ); 
                             ?>   
-                            <a href="#" class="menu__btn">
+                            <a href="#form" class="menu__btn">
                                 <?php the_field('button', 'option'); ?>
                             </a>
                         </div>                          

@@ -13,7 +13,7 @@ get_header();
                 <img src="<?php the_field('description__img-star'); ?>" alt="star"> 
             </div>               
             <p class="description__text text"><?php the_field('description__text'); ?></p>  
-            <button class="description__btn"><?php the_field('description__btn'); ?></button>               
+            <a href="#form" class="home__button description__btn"><?php the_field('description__btn'); ?></a>               
         </div>            
     </div>
 </section>
@@ -158,6 +158,7 @@ get_header();
         </div>
     </div>
 </section>
+<?php get_template_part( 'template-parts/join' ); ?> 
 <section class="question">
     <div class="_container">
         <h2 class="question__header home__title"><?php the_field('question__header'); ?></h2>
@@ -180,5 +181,6 @@ get_header();
         }
         ?>        
     </div>    
-</section>         
+</section>  
+<?php get_template_part( 'template-parts/form' ); ?>       
 <?php get_footer(); ?>
