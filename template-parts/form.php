@@ -12,10 +12,10 @@
         </div>
         <div class="form__column">
             
-            <form id="contactForm" name="form-message" class="form__message" method="post">
+            <div id="contactForm" name="form-message" class="form__message" method="post">
                 <?php echo do_shortcode('[contact-form-7 id="568668a" title="Contact form"]') ?>
 
-                <div class="popup closen">
+                <div id="popup-success" class="popup closen">
                     <div class="popup__container">
                         <img class="popup__star-big" src="<?php the_field('popup-star-big', 'option'); ?>" alt="star">                   
                         <button class="popup__close" type="button">&#215;</button>
@@ -25,7 +25,7 @@
                     </div> 
                 </div> 
 
-            </form>
+            </div>
 
         </div>
     </div>

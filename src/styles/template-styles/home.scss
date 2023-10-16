@@ -70,8 +70,7 @@
     &__container {
         display: flex;
         flex-direction: row-reverse;
-        gap: 70px;
-        margin: 0 0 0 40px;  
+        gap: 70px;        
         @media (max-width: 1280px) {
             gap: 16px;
         }
@@ -85,7 +84,7 @@
         }
     }
     &__img {        
-        width: 625px;  
+        width: 625px; 
         background:  #3F78E3;               
         @media (max-width: 767.98px) {   
             width: 100%;         
@@ -93,7 +92,7 @@
             justify-content: end;             
         }              
         & img {  
-            width: 625px;        
+            width: 625px;    
             height: 100%;
             position: absolute;                
             top: 0;
