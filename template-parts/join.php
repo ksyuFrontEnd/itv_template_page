@@ -1,10 +1,10 @@
 <?php
 
-              $joinTitle = get_field('join__title');
-              $joinParagraph = get_field('join__paragraph');
-              $joinImage = get_field('join__img');
+              $joinTitle = get_field('join__title', 'option');
+              $joinParagraph = get_field('join__paragraph', 'option');
+              $joinImage = get_field('join__img', 'option');
 
-              $joinButton = get_field('join__button');
+              $joinButton = get_field('join__button', 'option');
 
               $link_url = $joinButton['url'];
               $link_title = $joinButton['title'];

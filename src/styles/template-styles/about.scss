@@ -166,7 +166,7 @@ h2 {
 
 .join__button,
 .join__button:visited {
-  display: flex;
+  display: inline-flex;
   padding: 20px 32px;
   justify-content: center;
   align-items: center;
@@ -994,7 +994,8 @@ h2 {
   }
 
   .about__image1 {
-    top: 180px;
+    position: absolute;
+    top: -244px;
     left: 82px;
     width: 685px;
   }
@@ -1009,7 +1010,7 @@ h2 {
   }
 
   .about__block1 {
-    width: 330px;
+    width: 630px;
   }
 
   .about__image2 {
@@ -1017,8 +1018,8 @@ h2 {
   }
 
   .about__text {
-    width: 270px;
-    padding-top: 0;
+    width: 540px;
+    padding-top: 122px;
   }
 
   .about__paragraph {
