@@ -144,6 +144,12 @@ if ($projectLink['title']) { ?>
         </div>
       </section>
 
+      <?php
+
+
+get_template_part('template-parts/feedback');
+?>
+
       </section>
 
       
