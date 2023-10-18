@@ -300,3 +300,7 @@ p {
 .opened {
     display: block;
 }
+
+body.block {
+    overflow: hidden;     
+}
