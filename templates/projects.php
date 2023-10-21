@@ -58,7 +58,8 @@ if (have_rows("project__item")) { ?>
                    <?php echo $projectParagraph; ?>
                 </p>
 <?php
-if ($projectLink['title']) { ?>
+        echo "<script>console.log(\"$projectLink\")</script>";
+if ($projectLink) { ?>
 <a class="project__button" href="<?php echo esc_url( $projectLink['url']); ?>" 
             target="<?php echo esc_attr(  $projectLink['target']); ?>">
             <?php echo $projectLink['title']; ?></a>

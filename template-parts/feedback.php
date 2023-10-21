@@ -1,67 +1,71 @@
 <?php
+/**
+ * Template part for feedback posts
+*/
+
+?>
+
+
+<?php
 
               $fbTitle = get_field('fb__title', 'option');
-              $fbText = get_sub_field("fb__text", 'option');
-                $fbName = get_sub_field("fb__name", 'option');
-                $fbSpec = get_sub_field("fb__spec", 'option');
               ?>
 
 
 <div class="fb_section">
               <div class="fb_container">
-    <h2 class="fb__title"><?php echo $fbTitle; ?>
+    <div class="fb__heading">
+      <h2 class="fb__title"><?php echo $fbTitle; ?>
     </h2>
-    <ul class="fb__list">
-        <li class="fb__item">
-            <p class="fb__icon">“</p>
-            <p class="fb__text">Найкраща IT-компанія, з якою я коли-небудь працювала! Вони мають сильну команду професіоналів, які завжди готові надати ефективні та інноваційні рішення.<?php echo $fbText; ?></p>
-            <div class="fb__info">
-                
-            <img class="fb__img"
-              src="img" 
-              alt="img" 
-              />
-                
-            <div>
-                <p class="fb__name">Олександрова Аліна<?php echo $fbName; ?></p>
-            <p class="fb__spec">Менеджер<?php echo $fbSpec; ?></p>
-            </div>
-            </div>
-        </li>
-        <li class="fb__item">
-            <p class="fb__icon">“</p>
-            <p class="fb__text">Найкраща IT-компанія, з якою я коли-небудь працювала! Вони мають сильну команду професіоналів, які завжди готові надати ефективні та інноваційні рішення.<?php echo $fbText; ?></p>
-            <div class="fb__info">
-                
-            <img class="fb__img"
-              src="img" 
-              alt="img" 
-              />
-                
-            <div>
-                <p class="fb__name">Олександрова Аліна<?php echo $fbName; ?></p>
-            <p class="fb__spec">Менеджер<?php echo $fbSpec; ?></p>
-            </div>
-            </div>
-        </li>
-        <li class="fb__item">
-            <p class="fb__icon">“</p>
-            <p class="fb__text">Найкраща IT-компанія, з якою я коли-небудь працювала! Вони мають сильну команду професіоналів, які завжди готові надати ефективні та інноваційні рішення.<?php echo $fbText; ?></p>
-            <div class="fb__info">
-                
-            <img class="fb__img"
-              src="img" 
-              alt="img" 
-              />
-                
-            <div>
-                <p class="fb__name">Олександрова Аліна<?php echo $fbName; ?></p>
-            <p class="fb__spec">Менеджер<?php echo $fbSpec; ?></p>
-            </div>
-            </div>
-        </li>
-    </ul>
-    <div class="pagination swiper-pagination"></div>  
-    
+    <div class="fb__arrows">
+      <button class="fb__arrow-prev"></button>
+<button class="fb__arrow-next"></button>
+
+</div>
+    </div>
+<div class="fb-slider swiper">
+  
+            
+      <?php 
+                $rows = get_field('fb__item', 'option');
+                if( $rows ) { 
+                  echo '<div class="fb__list swiper-wrapper">';
+                    foreach( $rows as $row ) { 
+                        $fbText = $row['fb__text'];
+                        $fbName = $row['fb__name'];
+                        $fbSpec = $row['fb__spec'];
+                        $fbImg = $row['fb__img'];
+          
+                        echo '<div class="fb__item swiper-slide">';  
+                        echo '<p class="fb__icon">“</p>';
+                        echo '<p class="fb__text">';
+                                echo ( $fbText );
+                            echo '</p>';
+                        echo '<div class="fb__info">';
+          echo '<div class="fb__img">';
+          echo wp_get_attachment_image( $fbImg, 'full' );
+          echo '</div>';
+          echo '<div>';
+                echo '<p class="fb__name">';
+                echo ( $fbName );
+                echo '</p>';
+          echo '<p class="fb__spec">';
+          echo ($fbSpec); 
+          echo '</p>';
+            echo '</div>';
+            echo '</div>';
+                            
+                        echo '</div>';
+         
+                    } 
+                     echo '</div>';
+                } 
+                ?>
+
+        
+        
+    <div class="fb__pagination"></div>  
+    </div>
 </div>
 </div>
+
