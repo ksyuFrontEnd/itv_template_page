@@ -212,7 +212,10 @@ body.lock {
         z-index: 4;
     }
     &.active {
-        transform: translate(0px, -45%);         
+        transform: translate(0px, -40%); 
+        @media (min-width: 390px) {    
+            padding-top: 140px; 
+        }           
     }             
 }
   

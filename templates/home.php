@@ -159,6 +159,7 @@ get_header();
     </div>
 </section>
 <?php get_template_part( 'template-parts/join' ); ?> 
+<?php get_template_part('template-parts/feedback'); ?>
 <section class="question">
     <div class="_container">
         <h2 class="question__header home__title"><?php the_field('question__header'); ?></h2>
