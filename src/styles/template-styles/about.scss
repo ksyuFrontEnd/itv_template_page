@@ -249,8 +249,21 @@ h2 {
   justify-content: space-between;
   align-items: center;
   border-radius: 24px;
-  border-left: 8px solid #41c6e0;
+
   background-color: #f3f5fa;
+
+  &:nth-child(n) {
+    border-left: 8px solid #41c6e0;
+  }
+  &:nth-child(2n) {
+    border-left: 8px solid #ffeb43;
+  }
+  &:nth-child(3n) {
+    border-left: 8px solid #3f78e3;
+  }
+  &:nth-child(4n) {
+    border-left: 8px solid #fece00;
+  }
 }
 
 .experts__name {
@@ -593,6 +606,7 @@ h2 {
 
   .about {
     margin-top: 275px;
+    padding: 0;
     /* padding: 16px; */
     gap: 18px;
   }
@@ -698,12 +712,12 @@ h2 {
   }
 
   .experts__info {
-    width: 420px;
+    width: 100%;
   }
 
   .experts__name {
     font-size: 24px;
-    width: 230px;
+    width: 208px;
   }
 
   .experts__paragraph {
@@ -1097,18 +1111,18 @@ h2 {
   }
 
   .experts__info {
-    width: 420px;
+    width: 1108px;
   }
 
   .experts__name {
-    font-size: 24px;
-    width: 420px;
+    font-size: 40px;
+    width: 1108px;
   }
 
   .experts__paragraph {
-    margin-top: 16px;
-    font-size: 16px;
-    width: 420px;
+    margin-top: 24px;
+    font-size: 26px;
+    width: 1108px;
   }
 
   .experts__img {
@@ -1121,18 +1135,18 @@ h2 {
   }
 
   .ideas__title {
-    font-size: 30px;
+    font-size: 72px;
   }
 
   .ideas__info {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 72px;
   }
 
   .ideas__paragraph {
-    width: 330px;
-    font-size: 17px;
+    width: 831px;
+    font-size: 26px;
   }
 
   .ideas__paragraph--second {
@@ -1145,23 +1159,23 @@ h2 {
   }
 
   .ideas__message--first {
-    padding: 16x 24px;
-    width: 240px;
-    font-size: 15px;
+    padding: 16px 24px;
+    width: 336px;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.4;
   }
 
   .ideas__message--second {
-    padding: 16x 24px;
-    font-size: 15px;
+    padding: 16px 24px;
+    font-size: 22px;
     margin-left: 90px;
-    width: 240px;
+    width: 297px;
   }
 
   .ideas__img {
     height: 80px;
     left: 4px;
-    bottom: 32px;
+    bottom: 17px;
   }
 }

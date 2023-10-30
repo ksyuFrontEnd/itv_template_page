@@ -145,14 +145,12 @@ if ($projectLink) { ?>
         </div>
       </section>
 
-      <?php
-
-
-get_template_part('template-parts/feedback');
-?>
+      
 
       </section>
-
+<?php
+get_template_part('template-parts/form');
+?>
       
     </main>
 

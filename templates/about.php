@@ -216,6 +216,9 @@ get_template_part('template-parts/join');
           </div>
         </div>
       </section>
+      <?php
+get_template_part('template-parts/form');
+?>
     </main>
 
 

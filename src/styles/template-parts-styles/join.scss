@@ -1,3 +1,9 @@
+.container {
+  position: relative;
+  width: 1290px;
+  margin: 0 auto;
+}
+
 .join {
   margin-top: 64px;
   border-radius: 16px;
@@ -53,6 +59,13 @@
 
 /* mobile version */
 @media screen and (max-width: 374px) and (min-width: 0px) {
+  .container {
+    width: auto;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+
   .join {
     margin-top: 60px;
     padding: 40px 24px;
@@ -85,6 +98,10 @@
 }
 
 @media screen and (max-width: 767px) and (min-width: 375px) {
+  .container {
+    width: 343px;
+  }
+
   .join {
     margin-top: 60px;
     padding: 40px 24px;
@@ -117,6 +134,10 @@
 
 /* tablet version */
 @media screen and (max-width: 1299px) and (min-width: 768px) {
+  .container {
+    width: 690px;
+  }
+
   .join {
     margin-top: 48px;
     padding: 24px 30px;
@@ -150,6 +171,10 @@
 /* full hd version */
 
 @media screen and (min-width: 1920px) {
+  .container {
+    width: 1760px;
+  }
+
   .join {
     margin-top: 128px;
     padding: 42px 48px;
