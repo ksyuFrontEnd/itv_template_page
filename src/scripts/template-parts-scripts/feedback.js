@@ -29,5 +29,9 @@ new Swiper(".fb-slider", {
       slidesPerView: 3,
       enabled: true,
     },
+    1920: {
+      slidesPerView: 4,
+      enabled: true,
+    },
   },
 });
