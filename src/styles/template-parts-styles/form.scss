@@ -5,6 +5,7 @@
     }
     &__container {
         position: relative;
+        z-index: 0;
         display: flex;
         gap: 140px;
         justify-content: space-between;
