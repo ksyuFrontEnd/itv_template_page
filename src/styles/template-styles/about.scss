@@ -282,6 +282,7 @@ h2 {
 .ideas {
   margin-top: 100px;
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .ideas__title {
@@ -517,9 +518,9 @@ h2 {
   }
 
   .ideas {
-    margin-top: 64px;
-    /* width: calc(100% - 78px); */
+    margin-top: 60px;
     width: 100%;
+    margin-bottom: 60px;
   }
 
   .ideas__title {
@@ -582,7 +583,6 @@ h2 {
   }
 
   .mission {
-    /* width: 375px; */
     height: 420px;
     padding: 40px 16px;
   }
@@ -607,7 +607,6 @@ h2 {
   .about {
     margin-top: 275px;
     padding: 0;
-    /* padding: 16px; */
     gap: 18px;
   }
 
@@ -646,7 +645,6 @@ h2 {
   .join {
     margin-top: 60px;
     padding: 40px 24px;
-    /* width: 100%; */
   }
 
   .join__title {
@@ -692,7 +690,6 @@ h2 {
 
   .experts {
     margin-top: 60px;
-    /* padding: 0 16px; */
     padding: 0;
   }
 
@@ -734,9 +731,9 @@ h2 {
   }
 
   .ideas {
-    margin-top: 64px;
-    /* width: calc(100% - 78px); */
+    margin-top: 60px;
     width: 100%;
+    margin-bottom: 60px;
   }
 
   .ideas__title {
@@ -932,6 +929,7 @@ h2 {
   .ideas {
     margin-top: 64px;
     width: calc(100% - 78px);
+    margin-bottom: 64px;
   }
 
   .ideas__title {
@@ -1132,6 +1130,7 @@ h2 {
   .ideas {
     margin-top: 64px;
     width: calc(100% - 78px);
+    margin-bottom: 64px;
   }
 
   .ideas__title {

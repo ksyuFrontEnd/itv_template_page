@@ -215,12 +215,15 @@ get_template_part('template-parts/join');
             </div>
           </div>
         </div>
+        
       </section>
       <?php
-get_template_part('template-parts/form');
+get_template_part('template-parts/feedback');
 ?>
     </main>
 
-
+<?php
+get_template_part('template-parts/form');
+?>
 
 <?php get_footer(); ?>
