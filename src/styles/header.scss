@@ -67,10 +67,15 @@
         overflow:auto;
         @media (max-width: 767.98px) {
             flex-direction: column;
-            justify-content: end;
-            align-items:stretch;
-            margin: 290px 0 0;            
+            margin-top: 60%;
+            align-items:flex-start;                                
             padding: 20px;     
+        }
+        @media (max-width: 480px) {    
+            margin-top: 90%; 
+        }
+        @media (max-width: 380px) {    
+            margin-top: 80%; 
         }
     }
     &__list {
@@ -212,11 +217,10 @@ body.lock {
         background-color: rgba(255, 255, 255);
         z-index: 4;
     }
-    &.active {
-        transform: translate(0px, -40%); 
-        @media (min-width: 390px) {    
-            padding-top: 100px; 
-        }           
+    &.active {        
+        @media(max-width: 767.98px) {            
+            transform: translate(0px, -40%);               
+        }                 
     }             
 }
   
@@ -249,6 +253,9 @@ body.lock {
 }
 
 .menu__body.active ~ .burger-menu__overlay {
-    display: block;
-    background: rgba(44, 44, 44, 0.12); 
+    display: none;
+    @media(max-width: 767.98px) {
+        display: block;
+        background: rgba(44, 44, 44, 0.12); 
+    }    
 }
