@@ -89,7 +89,7 @@
         @media (max-width: 767.98px) {   
             width: 100%;         
             display: flex;
-            justify-content: end;             
+            justify-content: flex-end;             
         }              
         & img {  
             width: 625px;    
@@ -231,7 +231,7 @@
         width: 850px;        
         @media (max-width: 991.98px) {
             padding-bottom: 20px;
-            width: 390px;            
+            width: 450px;            
         }
         @media (max-width: 767.98px) {
             padding-bottom: 16px;
@@ -295,6 +295,9 @@
                 display: block;
                 margin: 0 auto; 
                 border-radius: 16px;
+                border-radius: 16px;
+                width: 320px;
+                border-radius: 16px;  
                 width: 320px;
             }         
         }
@@ -352,8 +355,9 @@
         }
     }   
     &__wrapper {           
-        gap: 30px;  
+        gap: 30px; 
         padding: 0px 0 50px;
+        justify-content: space-between;
         @media (max-width: 991.98px) {
             padding: 0px 0 64px;
         } 
@@ -363,19 +367,24 @@
             padding: 0px 0 0px; 
         }        
     }
-    &__slide {
-        min-height: 400px;               
+    &__slide { 
+        min-width: 300px; 
+        max-width: 300px;      
+        min-height: 350px;               
         padding: 32px 24px;
         border-radius: 24px;
         background: #FFF;
         margin: 0;
         position: relative;
         @media (max-width: 991.98px) {
+            max-width: 270px;
+            min-width: 270px; 
             min-height: 300px;
         }
         @media (max-width: 767.98px) {
             padding: 24px 24px 32px 24px; 
-            min-height: auto;      
+            min-height: auto;
+            max-width: 100%;      
         }
     }
     &__name {
@@ -403,24 +412,29 @@
         }
     }
     a {
-        display: block;
-        margin-left: auto;       
+        background-image: url("../../../assets/images/home-service-btn.png");    
+        background-size:contain;
+        background-position:right;
+        background-repeat: no-repeat;
         width: 74px;
         height: 74px;
+        margin-left: auto;
+        display: block;
         position: absolute;
         bottom: 32px;
         right: 24px;
-        text-align: center;
-        padding: 10px 5px;
-        background-color:#FECE00;
-        border-radius: 50%;
-        text-decoration: none;
-        font-size: 32px;
-        color: #FFFFFF;        
-        &:hover {background-color: #2C2C2C;}
+        object-fit: fill;
+        &:hover {
+            background-image: url("../../../assets/images/home-service-btn-hover.png");
+            transition: ease 0.7s;
+            transform: scale(2);            
+        }   
         @media (max-width: 991.98px) {
             width: 64px;
             height: 64px;
+            height: 64px;
+            padding: 7px 5px;
+            height: 64px;            
             padding: 7px 5px;
         }
         @media (max-width: 767.98px) {
@@ -429,10 +443,14 @@
             margin-bottom: -32px;
             width: 45px;
             height: 45px;
+            height: 45px;
             padding: 3px 5px;
             font-size: 24px;
-        }
-    }        
+            height: 45px;            
+            padding: 3px 5px;
+            font-size: 24px;
+        }        
+    }     
 }
 .home-services__pagination .swiper-pagination-bullet {
     border: 2px solid #FFF;
