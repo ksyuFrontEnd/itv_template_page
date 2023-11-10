@@ -197,9 +197,8 @@
     &__copyright {
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        width:max-content;
+        align-items: center;        
+        margin-top: 100px;        
         @media (max-width: 991.98px) {margin-top: 64px;}
         @media (max-width: 767.98px) {margin-top: 32px;}        
     }
@@ -209,7 +208,10 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 100%; 
-        @media (max-width: 767.98px) {font-size: 13px;}
+        @media (max-width: 767.98px) {
+            font-size: 13px;
+            width: max-content;
+        }
     } 
     &__copyright-img {
         margin: 0 2px;        
