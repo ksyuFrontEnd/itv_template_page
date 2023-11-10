@@ -53,8 +53,12 @@ new Swiper('.home-services-slider', {
           slidesPerView: 2.5,          
       },
       992: {          
-          slidesPerView: 4.5, 
+          slidesPerView: 3.5, 
           enabled: true,                
       },
+      1280: {          
+        slidesPerView: 4.5, 
+        enabled: true,                
+    },
   }
 });
