@@ -10,6 +10,7 @@
   background: #f3f5fa;
   padding: 32px 48px;
   position: relative;
+  overflow: hidden;
 }
 
 .join__title {
@@ -152,6 +153,7 @@
 
   .join__title {
     font-size: 24px;
+    width: 510px;
   }
 
   .join__paragraph {

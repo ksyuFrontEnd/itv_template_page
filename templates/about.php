@@ -217,9 +217,7 @@ get_template_part('template-parts/join');
         </div>
         
       </section>
-      <?php
-get_template_part('template-parts/feedback');
-?>
+      
     </main>
 
 <?php
