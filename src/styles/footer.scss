@@ -1,11 +1,11 @@
 /*icomoon====================================================*/
 @font-face {
-    font-family: 'icomoon';
-    src:  url('../images/icomoon.eot?u1u4ip');
-    src:  url('../images/icomoon.eot?u1u4ip#iefix') format('embedded-opentype'),
-      url('../images/icomoon.ttf?u1u4ip') format('truetype'),
-      url('../images/icomoon.woff?u1u4ip') format('woff'),
-      url('../images/icomoon.svg?u1u4ip#icomoon') format('svg');
+    font-family: 'icon';    
+    src:  url('../../assets/images/icon.eot?5pijky');
+    src:  url('../../assets/images/icon.eot?5pijky#iefix') format('embedded-opentype'),
+      url('../../assets/images/icon.ttf?5pijky') format('truetype'),
+      url('../../assets/images/icon.woff?5pijky') format('woff'),
+      url('../../assets/images/icon.svg?5pijky#icon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -13,7 +13,7 @@
   
   [class^="icon-"]::before, [class*=" icon-"]::before {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    font-family: 'icon' !important;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -26,9 +26,18 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-home-services-btn .path1:before {
+    content: "\e904";
+    color: rgb(44, 44, 44);    
+  }
+  .icon-home-services-btn .path2:before {
+    content: "\e905";
+    margin-left: -1.1171875em;
+    color: rgb(255, 255, 255);    
+  }
   .icon-facebook:before {
     content: "\e900";
-    color: #4675eb;
+    color: #4675eb;    
     border: 1px solid #4675EB;
     border-radius: 50%;
     margin-right: 15px;
@@ -58,9 +67,8 @@
     margin-right: 15px;
     padding: 4px;
   }
-  
-  
 
+  
 /*footer====================================================*/
 .footer {
     margin: 64px 0 32px;
@@ -193,27 +201,20 @@
             margin: 40px 0 0;
             text-align: center;
         } 
-    }
-    &__copyright {
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-        margin-top: 100px;        
+    }    
+    &__copyright {             
+        margin-top: 100px;            
         @media (max-width: 991.98px) {margin-top: 64px;}
         @media (max-width: 767.98px) {margin-top: 32px;}        
     }
-    &__text {
-        margin: 0;
+    &__text {        
+        text-align: center;
         color: #909390;
         font-size: 16px;
         font-weight: 400;
         line-height: 100%; 
         @media (max-width: 767.98px) {
-            font-size: 13px;
-            width: max-content;
+            font-size: 13px;            
         }
-    } 
-    &__copyright-img {
-        margin: 0 2px;        
-    }
+    }     
 }
