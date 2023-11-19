@@ -2,6 +2,15 @@ const popupSuccess = document.getElementById("popup-success");
 const popupMessage = document.querySelector(".popup")
 const closeButton = document.querySelector('.popup__close');
 const errorPhone = document.querySelector('.error-phone');
+const submitButton = document.getElementById("submit-btn");
+const wpcf7Element = document.querySelector(".wpcf7");
+const telInputEl = document.getElementById("phone");
+const nameInputEl = document.getElementById("name");
+
+/*function validateName(name) {
+    let res = /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]+$/;
+    return res.test(name);
+}*/
 
 document.addEventListener( 'wpcf7submit', function( event ) {
     let inputs = event.detail.inputs;

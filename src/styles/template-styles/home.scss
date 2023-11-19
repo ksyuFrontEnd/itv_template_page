@@ -290,16 +290,8 @@
             border-radius: 16px;
         }        
         & img {
-            width: 100%;             
-            @media (max-width: 767.98px) {
-                display: block;
-                margin: 0 auto; 
-                border-radius: 16px;
-                border-radius: 16px;
-                width: 320px;
-                border-radius: 16px;  
-                width: 320px;
-            }         
+            width: 100%;
+            border-radius: 16px;  
         }
     }
     &__title {               
@@ -425,32 +417,24 @@
         right: 24px;
         object-fit: fill;
         &:hover {
-            background-image: url("../../../assets/images/home-service-btn-hover.png");
-            transition: ease 0.7s;
-            transform: scale(2);            
+            background-image: url("../../../assets/images/home-service-btn-hover.png"); 
+            transform: scale(1.8);
         }   
         @media (max-width: 991.98px) {
             width: 64px;
-            height: 64px;
-            height: 64px;
-            padding: 7px 5px;
-            height: 64px;            
-            padding: 7px 5px;
+            height: 64px;           
+            padding: 7px 5px;            
         }
         @media (max-width: 767.98px) {
             position: relative;  
             margin-top: 64px;         
             margin-bottom: -32px;
             width: 45px;
-            height: 45px;
-            height: 45px;
-            padding: 3px 5px;
-            font-size: 24px;
             height: 45px;            
             padding: 3px 5px;
             font-size: 24px;
-        }        
-    }     
+        }       
+    }   
 }
 .home-services__pagination .swiper-pagination-bullet {
     border: 2px solid #FFF;

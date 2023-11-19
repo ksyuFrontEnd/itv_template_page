@@ -52,7 +52,7 @@ get_header();
                             echo '<p class="home-services__description">';
                                 echo ( $row['home-services__description'] );
                             echo '</p>';  
-                            echo '<a href="' . esc_url( $link ) . '" class="home-services__button"></a>'; 
+                            echo '<a href="' . esc_url( $link ) . '" class="icon-home-services-btn"></a>'; 
                         echo '</div>';  
                     } 
                 } 

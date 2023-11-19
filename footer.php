@@ -43,9 +43,7 @@
         </div>
     </div>
     <div class="footer__copyright">
-        <p class="footer__text">2023</p>
-        <p class="footer__copyright-img footer__text">&#169;</p>        
-        <p class="footer__text"> IT VOLUNTEERS | Всі права захищені</p> 
+        <p class="footer__text">2023 &#169; IT VOLUNTEERS | Всі права захищені</p>        
     </div> 
 </footer>
 <?php wp_footer(); ?>  

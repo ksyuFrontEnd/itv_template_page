@@ -49,8 +49,8 @@ new Swiper('.home-services-slider', {
   enabled: false,  
   breakpoints: {        
       768: {
-          enabled: true,
-          slidesPerView: 2.5,          
+          enabled: true,          
+          slidesPerView: 2,          
       },      
       1280: {          
         slidesPerView: 4.5, 
