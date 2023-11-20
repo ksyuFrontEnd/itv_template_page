@@ -198,3 +198,23 @@ if ($projectLink['title']) { ?>
     echo json_encode(array("content" => $content, "more" => $more, "offset" => $end));
     exit;
 }
+
+//validation Contact form 7, field - text
+add_filter('wpcf7_validate_text*', 'custom_text_confirmation_validation_filter', 20, 2);
+
+function custom_text_confirmation_validation_filter($result, $tag) {
+    $tag = new WPCF7_FormTag($tag);
+    $name = 'text-name';
+    $value = $_POST[$name];
+    $regex = '/^(([a-zA-Z]{1,80})|([а-яА-ЯЁёІіЇїҐґЄє]{1,80}))$/u';
+    $Valid = preg_match($regex, $value, $matches );
+
+    if ( $name == $tag->name ) {
+        $your_name = isset($_POST[$name]) ? trim($_POST[$name]) : '';
+        
+        if ( !$Valid ) {
+            $result->invalidate($tag, "Ім'я має містити лише літери, без пробілів або спеціальних символів");
+        }
+    }
+    return $result;
+}
