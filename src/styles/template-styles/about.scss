@@ -279,6 +279,11 @@ h2 {
   line-height: 1.4;
 }
 
+.experts__img {
+  display: block;
+  border-radius: 16px;
+}
+
 .ideas {
   margin-top: 100px;
   width: 100%;
@@ -784,6 +789,9 @@ h2 {
 
 /* tablet version */
 @media screen and (max-width: 1299px) and (min-width: 768px) {
+  main {
+    margin-top: 50px;
+  }
   h2 {
     font-size: 30px;
     font-weight: 600;
