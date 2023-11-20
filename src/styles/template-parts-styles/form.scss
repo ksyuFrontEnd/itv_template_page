@@ -87,8 +87,10 @@
             width: 100%;
         }
     }
-    #contactForm input[id="message"] {
-        padding: 20px 32px 100px;
+    #contactForm textarea[id="message"] {        
+        padding: 32px;      
+        max-height: 150px;
+        margin-top: 16px;
         margin-bottom: 20px;
         border: 1px solid #FFF;
         border-radius: 24px;
@@ -97,11 +99,11 @@
         font-size: 21px;       
         line-height: 130%; 
         @media (max-width: 991.98px) {
-            padding: 16px 32px 110px;            
+            width: 422px;                    
             font-size: 17px;   
         }
         @media (max-width: 767.98px) {
-            padding: 14px 16px 110px;            
+            width: 100%;                
             font-size: 16px; 
         }
     }
@@ -181,8 +183,8 @@
     border-radius: 10px;
     background-color: #FFFFFF;
     position: absolute;
-    top: -80px;
-    right: 0;     
+    top: -80px;    
+    right: 0px;     
     width: 250px;  
     padding: 12px 16px;   
     margin: 0 0 0 auto;
@@ -195,7 +197,9 @@
         right: 0; 
     }
 }
-
+.wpcf7-textarea ~ .wpcf7-not-valid-tip {
+    top: -170px; 
+}
 .wpcf7-not-valid-tip::before {
     content: "";
     display: block;

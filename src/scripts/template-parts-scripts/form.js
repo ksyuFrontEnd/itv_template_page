@@ -7,24 +7,22 @@ const wpcf7Element = document.querySelector(".wpcf7");
 const telInputEl = document.getElementById("phone");
 const nameInputEl = document.getElementById("name");
 
-/*function validateName(name) {
-    let res = /^[a-zA-Zа-яА-ЯёЁіІїЇєЄ]+$/;
-    return res.test(name);
-}*/
-
+//validate mask-phone
 document.addEventListener( 'wpcf7submit', function( event ) {
-    let inputs = event.detail.inputs;
-    let maskPhone = inputs.filter(function (elem) {
-        return 'mask-phone' == elem.name;
-    })
+    const value = telInputEl.value;
+    const pattern = /^[\+]?\d{2}[\s|-]?\(?\d{3}?\)?[\s]?\d{3}[\s|-]?\d{2}[\s|-]?\d{2}$/;
+    check = pattern.test(value);
     
-    if (!Number(maskPhone.value)) {
+    if (!check) {
         errorPhone.innerHTML = "Будь ласка, заповніть це поле.";
         errorPhone.classList.add('wpcf7-not-valid-tip'); 
+    } else {
+        errorPhone.innerHTML = "";
+        errorPhone.classList.remove('wpcf7-not-valid-tip');
     }   
 }, false );
 
-
+//wpcf7mailsent + pop-up
 document.addEventListener( 'wpcf7mailsent', function( event ) {
     popupMessage.classList.add('opened');
     document.body.classList.add('block'); 
