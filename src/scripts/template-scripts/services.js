@@ -15,8 +15,8 @@ new Swiper('.advantages-slider', {
             spaceBetween: 20,                   
         },
         768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20,                    
+            slidesPerView: 2,            
+            spaceBetween: 40,                    
         },
         992: {
             slidesPerView: 4,
