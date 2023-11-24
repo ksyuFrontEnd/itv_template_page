@@ -205,8 +205,8 @@ add_filter('wpcf7_validate_text*', 'custom_text_confirmation_validation_filter',
 function custom_text_confirmation_validation_filter($result, $tag) {
     $tag = new WPCF7_FormTag($tag);
     $name = 'text-name';
-    $value = $_POST[$name];
-    $regex = '/^(([a-zA-Z]{1,80})|([а-яА-ЯЁёІіЇїҐґЄє]{1,80}))$/u';
+    $value = $_POST[$name];    
+    $regex = "/^(([a-z\\\']{1,80})|([а-яёіїґє]{1,80}))+$/iu";
     $Valid = preg_match($regex, $value, $matches );
 
     if ( $name == $tag->name ) {

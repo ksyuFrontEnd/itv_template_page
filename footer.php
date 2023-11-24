@@ -26,7 +26,6 @@
             <ul class="footer__list">                            
                 <li><a href="<?php the_field('facebok_link', 'option'); ?>" target="_blank" class="footer__link icon-facebook"><?php the_field('facebook', 'option'); ?></a></li>
                 <li><a href="<?php the_field('telegram_link', 'option'); ?>" target="_blank" class="footer__link icon-telegram"><?php the_field('telegram', 'option'); ?></a></li>
-                <li><a href="<?php the_field('viber_link', 'option'); ?>" target="_blank" class="footer__link icon-viber"><?php the_field('viber', 'option'); ?></a></li>
                 <li><a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank" class="footer__link icon-linkedin"><?php the_field('linkedin', 'option'); ?></a></li>                            
             </ul>            
         </div>
@@ -36,8 +35,7 @@
             <p class="footer__content-text"><a href="mailto:<?php the_field('mail', 'option') ?>" class="footer__link"><?php the_field('mail', 'option') ?></a></p>
             <div class="footer__contact-social">
                 <a href="<?php the_field('facebok_link', 'option'); ?>" target="_blank" class="footer__link icon-facebook"></a>
-                <a href="<?php the_field('telegram_link', 'option'); ?>" target="_blank" class="footer__link icon-telegram"></a>
-                <a href="<?php the_field('viber_link', 'option'); ?>" target="_blank" class="footer__link icon-viber"></a>
+                <a href="<?php the_field('telegram_link', 'option'); ?>" target="_blank" class="footer__link icon-telegram"></a>                
                 <a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank" class="footer__link icon-linkedin"></a>
             </div>
         </div>

@@ -49,12 +49,14 @@ new Swiper('.home-services-slider', {
   enabled: false,  
   breakpoints: {        
       768: {
-          enabled: true,          
-          slidesPerView: 2,          
-      },      
-      1280: {          
-        slidesPerView: 4.5, 
-        enabled: true,                
-    },
+          enabled: true,                   
+          slidesPerView: 2,  
+          spaceBetween: 90,  
+      }, 
+      1310: {    
+        enabled: true,        
+        slidesPerView: 4, 
+        spaceBetween: 30,                      
+      },
   }
 });
