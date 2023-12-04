@@ -27,12 +27,14 @@ new Swiper('.home-projects-slider', {
           spaceBetween: 20,                         
       },
       768: {
+          enabled: false,  
           slidesPerView: 4,
-          spaceBetween: 20,                              
+          //spaceBetween: 30,                              
       },
       992: {
+          enabled: false,
           slidesPerView: 4,
-          spaceBetween: 30, 
+          //spaceBetween: 30, 
       },
   }
 });
