@@ -119,25 +119,25 @@ get_header();
         <div class="full-projects__container">    
             <div class="full-projects__row">
                 <div class="full-projects__slide1">
-                    <div class="full-projects__img1"><img src="<?php the_field('home-project__img1'); ?>" alt="project"></div>
-                    <h3 class="full-projects__name"><?php the_field('home-project__name1'); ?></h3>
+                    <div class="full-projects__img1"><img src="<?php the_field('home-project__img1'); ?>" alt="project"></div>                    
+                    <a href="<?php the_field('home-projects__link1'); ?>" class="full-projects__name" target="_blank"><?php the_field('home-project__name1'); ?></a>
                     <p class="full-projects__description"><?php the_field('home-project__description1'); ?></p>                    
                 </div>            
-                <div class="full-projects__slide2">
-                    <div class="full-projects__img2"><img src="<?php the_field('home-project__img2'); ?>" alt="project"></div>
-                    <h3 class="full-projects__name"><?php the_field('home-project__name2'); ?></h3>
+                <div class="full-projects__slide2"> 
+                    <div class="full-projects__img2"><img src="<?php the_field('home-project__img2'); ?>" alt="project"></div>                    
+                    <a href="<?php the_field('home-projects__link2'); ?>" class="full-projects__name" target="_blank"><?php the_field('home-project__name2'); ?></a>
                     <p class="full-projects__description"><?php the_field('home-project__description2'); ?></p>                    
                 </div>
             </div>        
             <div class="full-projects__row">
                 <div class="full-projects__slide3">
-                    <div class="full-projects__img3"><img src="<?php the_field('home-project__img3'); ?>" alt="project"></div>
-                    <h3 class="full-projects__name"><?php the_field('home-project__name3'); ?></h3>
+                    <div class="full-projects__img3"><img src="<?php the_field('home-project__img3'); ?>" alt="project"></div>                    
+                    <a href="<?php the_field('home-projects__link3'); ?>" class="full-projects__name" target="_blank"><?php the_field('home-project__name3'); ?></a>
                     <p class="full-projects__description"><?php the_field('home-project__description3'); ?></p>                    
                 </div>
                 <div class="full-projects__slide4">
                     <div class="full-projects__img4"><img src="<?php the_field('home-project__img4'); ?>" alt="project"></div>
-                    <h3 class="full-projects__name"><?php the_field('home-project__name4'); ?></h3>
+                    <a href="<?php the_field('home-projects__link4'); ?>" class="full-projects__name" target="_blank"><?php the_field('home-project__name4'); ?></a>
                     <p class="full-projects__description"><?php the_field('home-project__description4'); ?></p>                    
                 </div>  
             </div>                     
