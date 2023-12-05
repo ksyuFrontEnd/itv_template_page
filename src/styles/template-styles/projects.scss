@@ -92,10 +92,20 @@ h2 {
   &:not(:first-child) {
     margin-top: 64px;
   }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 .project__img {
   flex: 1;
+
+  overflow: hidden;
+  & > img {
+    width: 100%;
+    border-radius: 24px;
+  }
 }
 
 .project__text {
@@ -185,7 +195,7 @@ h2 {
 
 /* mobile version */
 
-@media screen and (max-width: 767px) and (min-width: 375px) {
+@media screen and (max-width: 767.98px) and (min-width: 375px) {
   main {
     margin-top: 20px;
   }
@@ -247,6 +257,10 @@ h2 {
   .project__img {
     width: 100%;
     margin-bottom: 30px;
+
+    & > img {
+      border-radius: 16px;
+    }
   }
 
   .project__text {
@@ -281,7 +295,7 @@ h2 {
 
 /* mobile version */
 
-@media screen and (max-width: 374px) and (min-width: 0px) {
+@media screen and (max-width: 374.98px) and (min-width: 0px) {
   main {
     margin-top: 20px;
   }
@@ -346,6 +360,10 @@ h2 {
   .project__img {
     width: 100%;
     margin-bottom: 30px;
+
+    & > img {
+      border-radius: 16px;
+    }
   }
 
   .project__text {
@@ -418,6 +436,10 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 30px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
   .project__img {
@@ -499,6 +521,10 @@ h2 {
     align-items: center;
     width: 100%;
     gap: 167px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 
   .project__text {

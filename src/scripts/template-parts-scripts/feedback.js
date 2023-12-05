@@ -10,6 +10,7 @@ new Swiper(".fb-slider", {
 
   loop: true,
   watchOverflow: true,
+  centerInsufficientSlides: true,
   pagination: {
     el: ".fb__pagination",
     clickable: true,

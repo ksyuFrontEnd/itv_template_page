@@ -147,9 +147,7 @@ if ($projectLink) { ?>
 
       
 
-      </section>
-
-      
+      </section>   
     </main>
 
 <?php
