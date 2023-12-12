@@ -62,7 +62,6 @@
   background-color: #fff;
   position: relative;
   height: 330px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,15 +111,16 @@
 }
 
 .fb__wrapper {
-  gap: 30px;
-  padding: 0px 0 50px;
-  @media (max-width: 991.98px) {
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 0 0px;
+
+  @media (min-width: 768px) {
     padding: 0px 0 64px;
   }
-  @media (max-width: 767.98px) {
-    flex-direction: column;
-    gap: 20px;
-    padding: 0px 0 0px;
+  @media (min-width: 1300px) {
+    gap: 30px;
+    padding: 0px 0 50px;
   }
 }
 
