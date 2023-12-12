@@ -68,8 +68,8 @@ add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 /** add swiper */
 function add_swiper() {
-  wp_enqueue_style( 'swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css' );
-  wp_enqueue_script( 'swiper-scripts', 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js' );
+  wp_enqueue_style( 'swiper-style', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css' );
+  wp_enqueue_script( 'swiper-scripts', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js' );
 }
 
 add_action( 'wp_enqueue_scripts', 'add_swiper' );

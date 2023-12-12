@@ -1,38 +1,35 @@
 // add swiper
 new Swiper(".fb-slider", {
-  direction: "horizontal",
-  slidesPerView: 3,
-  spaceBetween: 30,
+  // direction: "horizontal",
   navigation: {
     nextEl: ".fb__arrow-next",
     prevEl: ".fb__arrow-prev",
   },
-
+  enabled: true,
   loop: true,
+  autoHeight: false,
   watchOverflow: true,
-  centerInsufficientSlides: true,
   pagination: {
     el: ".fb__pagination",
     clickable: true,
   },
-  // enabled: false,
-  autoHeight: false,
+  loopedSlidesLimit: false,
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
     768: {
-      enabled: true,
       slidesPerView: 2,
+      spaceBetween: 30,
     },
-    992: {
+    1300: {
       slidesPerView: 3,
-      enabled: true,
+      spaceBetween: 30,
     },
     1920: {
       slidesPerView: 4,
-      enabled: true,
       spaceBetween: 30,
+      centerInsufficientSlides: true,
     },
   },
 });
