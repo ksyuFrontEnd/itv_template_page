@@ -134,8 +134,11 @@
                 width: 64px;
                 height: 64px;
                 bottom: 15px;
-                right: -5px; 
-            }         
+                right: -20px; 
+            }   
+            @media (max-width: 767.98px) {
+                right: -30px; 
+            }      
         }  
     }
     &__title {            
@@ -567,8 +570,8 @@
     &__img {  
         position: relative;  
         margin-bottom: 20px; 
-        height: 171px;        
-        background: lightgray 0px -16.683px / 100% 109.756% no-repeat;   
+        height: 171px;     
+        border-radius: 16px;
         img {
             border-radius: 16px;
             width: 100%;
@@ -671,7 +674,7 @@
     }
     &__img3 {  
         height: 485px;      
-        padding: 8% 21%;
+        padding: 8% 29%;
         border-radius: 24px;
         background: rgba(122, 215, 233, 0.60);    
         @media (max-width: 991.98px) {
