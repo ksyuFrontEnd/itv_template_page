@@ -41,7 +41,7 @@
         </div>
     </div>
     <div class="footer__copyright">
-        <p class="footer__text"><?php the_field('footer_year', 'option'); ?> &#169; IT VOLUNTEERS | Всі права захищені</p>        
+        <p class="footer__text"> <?php echo date( "Y" ); ?> &#169; IT VOLUNTEERS | Всі права захищені</p>        
     </div> 
 </footer>
 <?php wp_footer(); ?>  
