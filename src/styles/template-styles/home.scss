@@ -562,7 +562,7 @@
     }    
     &__slide {
         min-height: 473px;  
-        padding: 24px;              
+        padding: 24px 24px 72px 24px;              
         border-radius: 16px;
         background: #FFF;
         box-shadow: 0px 4px 25px 0px rgba(44, 44, 44, 0.11); 
@@ -586,7 +586,7 @@
         line-height: 100%; 
     }
     &__description {
-        margin: 0 0 72px;
+        margin: 0 0 12px;
         font-size: 16px;
         line-height: 150%;
     }
