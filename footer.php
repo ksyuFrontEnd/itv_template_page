@@ -26,7 +26,7 @@
             <ul class="footer__list">                            
                 <li><a href="<?php the_field('facebok_link', 'option'); ?>" target="_blank" class="footer__link icon-facebook"><?php the_field('facebook', 'option'); ?></a></li>
                 <li><a href="<?php the_field('telegram_link', 'option'); ?>" target="_blank" class="footer__link icon-telegram"><?php the_field('telegram', 'option'); ?></a></li>
-                <li><a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank" class="footer__link icon-linkedin"><?php the_field('linkedin', 'option'); ?></a></li>                            
+                <li><a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank" class="footer__link icon-linkedin"><?php the_field('linkedin', 'option'); ?></a></li> 
             </ul>            
         </div>
         <div class="footer__contact">            
