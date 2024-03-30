@@ -27,6 +27,8 @@
                 <li><a href="<?php the_field('facebok_link', 'option'); ?>" target="_blank" class="footer__link icon-facebook"><?php the_field('facebook', 'option'); ?></a></li>
                 <li><a href="<?php the_field('telegram_link', 'option'); ?>" target="_blank" class="footer__link icon-telegram"><?php the_field('telegram', 'option'); ?></a></li>
                 <li><a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank" class="footer__link icon-linkedin"><?php the_field('linkedin', 'option'); ?></a></li> 
+                <!-- додати посилання на інстаграм -->
+                <li><a href="<?php the_field('instagram_link', 'option'); ?>" target="_blank" class="footer__link icon-instagram"><?php the_field('instagram', 'option'); ?></a></li> 
             </ul>            
         </div>
         <div class="footer__contact">            
