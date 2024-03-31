@@ -141,7 +141,7 @@ function acf_repeater_show_more()
     if (!isset($_POST["post_id"]) || !isset($_POST["offset"])) {
         return;
     }
-    $show = 2; // по скільки відображати
+    $show = 6; // по скільки відображати
     $start = $_POST["offset"];
     $end = $start + $show;
     $post_id = $_POST["post_id"];

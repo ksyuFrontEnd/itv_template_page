@@ -22,7 +22,7 @@ get_header();
           <?php
 $total_rows = count(get_field("project__item")); # всього постів
 $count = 0;  # лічильник
-$number = 2; # скільки відображати на сторінці
+$number = 6; # скільки відображати на сторінці
 ?>
 
 
