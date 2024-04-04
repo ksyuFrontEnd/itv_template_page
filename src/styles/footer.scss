@@ -71,10 +71,10 @@
         }      
     } 
     // Стилі для полів соц. мереж
-    &__social-container {
+    &__socials {
         display: flex;        
     }
-    &__social-icon {
+    &__socials-icon {
         width: 30px;
         height: 30px;
         color: #4675eb;
@@ -87,7 +87,7 @@
             max-height: 100%;
         }  
     }
-    &__social-link {
+    &__socials-link {
         margin-top: 5px;
         
     }

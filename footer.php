@@ -27,8 +27,8 @@
             
                 <!-- Додані поля для іконок у svg і додано посилання на інстаграм -->
                 <li>
-                    <div class="footer__social-container">
-                        <div class="footer__social-icon">
+                    <div class="footer__socials">
+                        <div class="footer__socials-icon">
                             <?php
                                 $facebookIcon = get_field('facebook_icon', 'option');
                                 $facebook = get_field('facebook', 'option'); 
@@ -38,14 +38,14 @@
                                 <img src="<?php echo $facebookIcon['url']; ?>" alt="<?php echo $facebookIcon['url']; ?>">
                             </a>
                         </div>
-                        <div class="footer__social-link">
+                        <div class="footer__socials-link">
                             <a href="<?php echo $facebookLink; ?>" target="_blank" class="footer__link"><?php echo $facebook; ?></a>
                         </div>
                     </div>
                 </li> 
                 <li>
-                    <div class="footer__social-container">
-                        <div class="footer__social-icon">
+                    <div class="footer__socials">
+                        <div class="footer__socials-icon">
                             <?php
                                 $telegramIcon = get_field('telegram_icon', 'option');
                                 $telegram = get_field('telegram', 'option'); 
@@ -55,14 +55,14 @@
                                 <img src="<?php echo $telegramIcon['url']; ?>" alt="<?php echo $telegramIcon['url']; ?>">
                             </a>
                         </div>
-                        <div class="footer__social-link">
+                        <div class="footer__socials-link">
                             <a href="<?php echo $telegramLink; ?>" target="_blank" class="footer__link"><?php echo $telegram; ?></a>
                         </div>
                     </div>
                 </li> 
                 <li>
-                    <div class="footer__social-container">
-                        <div class="footer__social-icon">
+                    <div class="footer__socials">
+                        <div class="footer__socials-icon">
                             <?php
                                 $linkedinIcon = get_field('linkedin_icon', 'option');
                                 $linkedin = get_field('linkedin', 'option'); 
@@ -72,14 +72,14 @@
                                 <img src="<?php echo $linkedinIcon['url']; ?>" alt="<?php echo $linkedinIcon['url']; ?>">
                             </a>
                         </div>
-                        <div class="footer__social-link">
+                        <div class="footer__socials-link">
                             <a href="<?php echo $linkedinLink; ?>" target="_blank" class="footer__link"><?php echo $linkedin; ?></a>
                         </div>
                     </div>
                 </li> 
                 <li>
-                    <div class="footer__social-container">
-                        <div class="footer__social-icon">
+                    <div class="footer__socials">
+                        <div class="footer__socials-icon">
                             <?php
                                 $instagramIcon = get_field('instagram_icon', 'option');
                                 $instagram = get_field('instagram', 'option'); 
@@ -89,7 +89,7 @@
                                 <img src="<?php echo $instagramIcon['url']; ?>" alt="<?php echo $instagramIcon['url']; ?>">
                             </a>
                         </div>
-                        <div class="footer__social-link">
+                        <div class="footer__socials-link">
                             <a href="<?php echo $instagramLink; ?>" target="_blank" class="footer__link"><?php echo $instagram; ?></a>
                         </div>
                     </div>
@@ -102,22 +102,22 @@
             <p class="footer__content-text"><a href="mailto:<?php the_field('mail', 'option') ?>" class="footer__link"><?php the_field('mail', 'option') ?></a></p>
             <!-- Соц. мережі на менших екранах -->
             <div class="footer__contact-social">
-                <div class="footer__social-icon">     
+                <div class="footer__socials-icon">     
                     <a href="<?php echo $facebookLink; ?>" target="_blank">
                         <img src="<?php echo $facebookIcon['url']; ?>" alt="<?php echo $facebookIcon['url']; ?>">
                     </a>
                 </div>
-                <div class="footer__social-icon">    
+                <div class="footer__socials-icon">    
                     <a href="<?php echo $telegramLink; ?>" target="_blank">
                         <img src="<?php echo $telegramIcon['url']; ?>" alt="<?php echo $telegramIcon['url']; ?>">
                     </a>
                 </div>                
-                <div class="footer__social-icon">       
+                <div class="footer__socials-icon">       
                     <a href="<?php echo $linkedinLink; ?>" target="_blank">
                         <img src="<?php echo $linkedinIcon['url']; ?>" alt="<?php echo $linkedinIcon['url']; ?>">
                     </a>
                 </div>
-                <div class="footer__social-icon">     
+                <div class="footer__socials-icon">     
                     <a href="<?php echo $instagramLink; ?>" target="_blank">
                         <img src="<?php echo $instagramIcon['url']; ?>" alt="<?php echo $instagramIcon['url']; ?>">
                     </a>
